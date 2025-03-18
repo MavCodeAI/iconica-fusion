@@ -1,3 +1,4 @@
+
 import { 
   AlertCircle, 
   ArrowRight, 
@@ -107,6 +108,7 @@ export const Icons = {
   get: ({ name, ...props }: IconProps) => {
     if (!name) return <HelpCircle {...props} />;
     
+    // Fixed: Use the direct component from the map instead of trying to use the Icon component
     const IconComponent = (iconMap as Record<string, typeof LucideIcon>)[name];
     
     if (!IconComponent) {

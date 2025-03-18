@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icons } from '@/components/Icons';
 import { Badge } from '@/components/ui/badge';
-import { Edit, LogOut, Settings, Star, Upload } from 'lucide-react';
+import { Edit, LogOut, Settings, Star, Upload, Plus } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import IconCard from '@/components/IconCard';
 import { getTrendingIcons } from '@/data/icons';

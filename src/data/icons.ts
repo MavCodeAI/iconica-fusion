@@ -1,4 +1,3 @@
-
 import { 
   Home, 
   Heart, 
@@ -548,6 +547,11 @@ export const getAllTags = (): string[] => {
     icon.tags.forEach(tag => tagsSet.add(tag));
   });
   return Array.from(tagsSet);
+};
+
+// Get all icons
+export const getAllIcons = (): Icon[] => {
+  return icons;
 };
 
 // Get icons by category

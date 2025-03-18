@@ -1,4 +1,3 @@
-
 import { 
   AlertCircle, 
   ArrowRight, 
@@ -108,7 +107,7 @@ export const Icons = {
   get: ({ name, ...props }: IconProps) => {
     if (!name) return <HelpCircle {...props} />;
     
-    const IconComponent = (iconMap as Record<string, LucideIcon>)[name];
+    const IconComponent = (iconMap as Record<string, typeof LucideIcon>)[name];
     
     if (!IconComponent) {
       console.warn(`Icon "${name}" not found in iconMap`);

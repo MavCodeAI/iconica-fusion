@@ -1,0 +1,29 @@
+
+import React from 'react';
+import { Category } from '@/data/icons';
+import { Link } from 'react-router-dom';
+import { cn } from '@/lib/utils';
+
+interface CategoryCardProps {
+  category: Category;
+  className?: string;
+}
+
+const CategoryCard: React.FC<CategoryCardProps> = ({ category, className }) => {
+  const IconComponent = category.icon;
+  
+  return (
+    <Link 
+      to={`/icons/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+      className={cn("category-card group", className)}
+    >
+      <div className="mb-3 p-3 bg-brand-50 rounded-full text-brand-500 group-hover:bg-brand-100 transition-colors">
+        <IconComponent className="h-6 w-6" />
+      </div>
+      <h3 className="font-medium text-gray-900">{category.name}</h3>
+      <p className="text-sm text-gray-500 mt-1">{category.count} icons</p>
+    </Link>
+  );
+};
+
+export default CategoryCard;

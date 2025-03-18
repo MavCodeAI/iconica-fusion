@@ -15,6 +15,7 @@ import UploadIcons from "./pages/UploadIcons";
 import IconsExplorer from "./pages/IconsExplorer";
 import Collections from "./pages/Collections";
 import Pricing from "./pages/Pricing";
+import Illustrations from "./pages/Illustrations";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/icons" element={<IconsExplorer />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/illustrations" element={<Illustrations />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

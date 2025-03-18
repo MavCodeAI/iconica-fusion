@@ -108,8 +108,8 @@ export const Icons = {
   get: ({ name, ...props }: IconProps) => {
     if (!name) return <HelpCircle {...props} />;
     
-    // Fixed: Use the direct component from the map instead of trying to use the Icon component
-    const IconComponent = (iconMap as Record<string, typeof LucideIcon>)[name];
+    // Get the icon component directly from the iconMap
+    const IconComponent = iconMap[name as keyof typeof iconMap];
     
     if (!IconComponent) {
       console.warn(`Icon "${name}" not found in iconMap`);

@@ -13,6 +13,7 @@ import UserProfile from "./pages/UserProfile";
 import Settings from "./pages/Settings";
 import UploadIcons from "./pages/UploadIcons";
 import IconsExplorer from "./pages/IconsExplorer";
+import IconLibrary from "./pages/IconLibrary";
 import Collections from "./pages/Collections";
 import Pricing from "./pages/Pricing";
 import Illustrations from "./pages/Illustrations";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/settings" element={<Settings />} />
           <Route path="/upload" element={<UploadIcons />} />
           <Route path="/icons" element={<IconsExplorer />} />
+          <Route path="/icons/library" element={<IconLibrary />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/illustrations" element={<Illustrations />} />

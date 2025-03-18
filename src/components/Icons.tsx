@@ -25,7 +25,8 @@ import {
   Twitter, 
   User, 
   X, 
-  type Icon as LucideIcon
+  type Icon as LucideIcon,
+  // Add more Lucide icon imports as needed
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";

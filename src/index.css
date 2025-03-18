@@ -78,9 +78,10 @@
 }
 
 .icon-card {
-  @apply relative flex flex-col items-center justify-center p-4 bg-white rounded-lg border border-gray-200 transition-all duration-200 hover:shadow-md hover:border-brand-300 overflow-hidden group;
+  @apply relative flex flex-col items-center justify-center p-4 bg-white rounded-lg border border-gray-200 transition-all duration-200 hover:shadow-md hover:border-brand-300 overflow-hidden;
 }
 
+/* Add the group class directly in HTML instead of using @apply */
 .icon-card:hover .icon-actions {
   @apply opacity-100;
 }
